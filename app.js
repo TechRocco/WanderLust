@@ -84,14 +84,6 @@ app.use((req, res, next)=>{
     next();
 })
 
-
-
-//home route
-app.get("/", (req, res)=>{
-    res.send("root is working");
-});
-
-
 app.use("/listings", listingsRouter);
 app.use("/listings/:id/review", reviewsRouter);
 app.use("/", userRouter);
