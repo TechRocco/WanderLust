@@ -1,0 +1,80 @@
+<% layout("/layouts/boilerplate") %>
+
+    <body>
+        <div class="row">
+            <div class="col-10 col-lg-8 offset-1 offset-lg-2">
+                <br>
+                <h3>Create New Property</h3>
+                 
+
+                <!-- enctype is used for uploading files. -->
+                <form action="/listings" method="post" enctype="multipart/form-data" novalidate class="needs-validation">
+
+
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Title</label>
+                        <input type="text" name="title" placeholder="Enter title" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="des" class="form-label">Description</label>
+                        <textarea name="description" cols="30" rows="3" placeholder="Enter description"
+                            class="form-control" required></textarea>
+                    </div>
+
+                    <!-- <div class="mb-3">
+                        <label for="url" class="form-label">Image</label>
+                        <input type="text" name="image" placeholder="Enter image URL/link" class="form-control">
+                    </div> -->
+
+                    <div class="mb-3">
+                        <label for="url" class="form-label">Upload Image</label>
+                        <input type="file" name="image" class="form-control" required>
+                    </div>
+
+                    <div class="row">
+                        <div class="mb-3 col-md-4">
+                            <label for="price" class="form-label">Price</label>
+                            <input type="text" name="price" placeholder="Enter price" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3 col-md-8">
+                            <label for="country" class="form-label">Country</label>
+                            <input type="text" name="country" placeholder="Enter country" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="location" class="form-label">Location</label>
+                        <input type="text" name="location" placeholder="Enter location" class="form-control" required>
+                    </div>
+
+                    <button class="btn btn-dark addBtn">Add</button>
+                    <br><br><br>
+
+                    
+                </form>
+            </div>
+        </div>
+
+
+    </body>
+
+
+
+
+                    <!-- <input type="text" name="title" placeholder="Enter title">
+                    <br><br>
+                    <textarea name="description" cols="30" rows="5" placeholder="Enter description"></textarea>
+                    <br><br>
+                    <input type="text" name="image" placeholder="Enter image URL/link">
+                    <br><br>
+                    <input type="number" name="price" placeholder="Enter price">
+                    <br><br>
+                    <input type="text" name="location" placeholder="Enter location">
+                    <br><br>
+                    <input type="text" name="country" placeholder="Enter country">
+                    <br><br>
+
+                    <button>Add</button> -->
+
