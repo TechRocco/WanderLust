@@ -37,7 +37,7 @@ async function main(){
 }
 main()
 .then((res)=>{
-    console.log("connection successful");
+    console.log("connection to DB successful");
 })
 .catch((err)=>{
     console.log(err);
