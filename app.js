@@ -73,7 +73,7 @@ app.use(passport.session());      //to verify user in a seesion from page to pag
 passport.use(new LocalStrategy(User.authenticate()));
 
 // use static serialize and deserialize of model for passport session support
-passport.serializeUser(User.serializeUser());   //erialize users into the session
+passport.serializeUser(User.serializeUser());   //serialize users into the session
 passport.deserializeUser(User.deserializeUser());  // deserialize users into the session
 
 
